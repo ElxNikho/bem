@@ -1,0 +1,22 @@
+.mat-paginator {
+  color: $color2;
+
+  icon-button.mat-warn,
+  .mat-icon-button,
+  .mat-stroked-button.mat-primary,
+  .mat-stroked-button.mat-accent,
+  .mat-stroked-button.mat-warn,
+  .mat-stroked-button {
+    color: $color1;
+  }
+
+  .mat-form-field-appearance-legacy .mat-form-field-underline,
+  .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: $color1;
+    height: 2px;
+  }
+  .mat-select-arrow,
+  .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+    color: $color1;
+  }
+}

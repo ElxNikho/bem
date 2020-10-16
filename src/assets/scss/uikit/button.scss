@@ -1,0 +1,48 @@
+button {
+    &.mat-button, &.mat-raised-button {
+      border-radius: 0;
+      &.mat-primary {
+        background-color: $color1;
+        color: $btn-fc1;
+        border: 1px solid $btn-color1;
+        transition: opacity ease 200ms, background-color ease 100ms,
+          color ease 100ms;
+        &:not([disabled]):hover {
+          opacity: 0.75;
+        }
+        &:not([disabled]):active {
+          opacity: 0.9;
+        }
+      }
+      &[disabled] {
+        font-weight: 300;
+        background-color: rgba($color1, 0.85);
+        color: $btn-fc2 !important;
+        opacity: 0.6;
+      }
+  
+      &.mat-secondary {
+        background-color: $btn-bg1;
+        color: $btn-fc3;
+        border: 1.5px solid $btn-color1;
+        transition: opacity ease 200ms, background-color ease 100ms,
+          color ease 100ms;
+  
+        &:not([disabled]):hover {
+          background-color: $color4;
+          color: $btn-fc2;
+        }
+        &:not([disabled]):active {
+          background-color: $color2;
+          color: $color4;
+          border-color: $color2;
+        }
+      }
+  
+      &[disabled] {
+        font-weight: 300;
+        background-color: rgba($color1, 0.85);
+        color: $btn-fc2 !important;        
+      }
+    }
+  }

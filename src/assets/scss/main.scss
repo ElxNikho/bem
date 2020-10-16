@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+/**
+<<<<<<< HEAD
+* TYPOGRAPHY
+**/
+
+@import "./uikit/typography.scss";
+
+/* FONTS
+**/
+
+@import "./fonts.scss";
+
+/**
+* BUTTON
+**/
+@import "./uikit/button.scss";
+
+/**
+* TITLE
+**/
+
+@import "./uikit/title.scss";
+
+/**
+* RADIOS
+**/
+
+@import "./uikit/radio.scss";
+
+/**
+* CHECKBOX
+**/
+
+@import "./uikit/checkbox.scss";
+
+/**
+* SLIDE TOGGLE
+**/
+
+@import "./uikit/slide.scss";
+
+/**
+* TABLE
+**/
+
+@import "./uikit/table.scss";
+
+/**
+* CARDS
+**/
+
+@import "./uikit/card.scss";
+
+/**
+* ACCORDION / COLLAPSIBLE 
+**/
+
+@import "./uikit/acordion.scss";
+
+/**
+* TABS
+**/
+
+@import "./uikit/tabs.scss";
+
+/**
+* INPUTS
+**/
+
+@import "./uikit/inputs.scss";
+
+/**
+* GLOBALS
+**/
+
+html > body.swal2-height-auto {
+  height: 100% !important;
+}

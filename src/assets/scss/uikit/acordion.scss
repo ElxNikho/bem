@@ -1,0 +1,23 @@
+.mat-accordion .mat-expansion-panel {
+  border-radius: 8px !important;
+}
+
+.mat-accordion .mat-expansion-panel:first-of-type {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.mat-expansion-indicator::after {
+  color: $color1;
+  border-width: 0 2.5px 2.5px 0 !important;
+}
+.mat-tab-header {
+  .mat-tab-label-container {
+    z-index: 0;
+  }
+}

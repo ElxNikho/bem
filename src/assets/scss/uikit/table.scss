@@ -1,0 +1,67 @@
+.mat-table {
+  thead {
+    tr {
+      height: 40px;
+      .mat-header-cell {
+        font-size: unset;
+        color: $color2;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 40px;
+      .mat-cell {
+        font-size: unset;
+        color: $color2;
+      }
+    }
+  }
+
+  
+
+  tr.mat-header-row {
+    background-color: $table-header-bgc;
+    height: $table-header-height;
+    th {
+      color: $table-header-c;
+    }
+
+    th.mat-header-cell {
+      border-bottom: 1px solid;
+      border-top: 1px solid;
+      border-color: $table-header-border-c;
+    }
+
+    th.mat-header-cell:first-child {
+      border-left: 1px solid $table-header-border-c;
+    }
+
+    th.mat-header-cell:last-child {
+      border-right: 1px solid $table-header-border-c;
+    }
+  }
+
+  td.mat-cell {
+    border-bottom: 0.5px solid;
+    border-top: 0.5px solid;
+    border-color: $table-body-border-c;
+  }
+
+  td.mat-cell:first-child {
+    border-left: 1px solid;
+    border-color: $table-body-border-c;
+  }
+
+  td.mat-cell:last-child {
+    border-right: 1px solid;
+    border-color: $table-body-border-c;
+  }
+}
+
+/**
+* PAGINATOR
+**/
+
+@import "table_paginator.scss";

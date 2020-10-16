@@ -1,0 +1,110 @@
+/**
+* SUFFIX EXPLANATION
+*
+*   c => color
+*   bgc => background-color
+*
+*/
+
+$color1: #9aae04;
+$color2: #5b5d5f;
+$color3: #cdcdcd;
+$color4: #f3f3f4;
+$color5: #1c84c6;
+
+$color-error: #FF0000;
+$color-warn: #EAC600;
+$color-success: #00C30F;
+
+/**
+* SCREEN BREAKPOINTS
+*/
+
+$screen-breakpoint-xs: 360px;
+$screen-breakpoint-sm: 576px;
+$screen-breakpoint-md: 768px;
+$screen-breakpoint-lg: 992px;
+$screen-breakpoint-xl: 1200px;
+
+@mixin media($media) {
+    @if $media == xs {
+      @media (max-width: $screen-breakpoint-sm) { @content; }
+    }
+    @else if $media == sm {
+      @media (min-width: $screen-breakpoint-sm) and (max-width: $screen-breakpoint-md) { @content; }
+    }
+    @else if $media == md {
+      @media (min-width: $screen-breakpoint-md) and (max-width: $screen-breakpoint-lg) { @content; }
+    }
+    @else if $media == lg {
+      @media (min-width: $screen-breakpoint-lg) and (max-width: $screen-breakpoint-xl) { @content; }
+    }
+    @else if $media == xl {
+      @media (min-width: $screen-breakpoint-lg) { @content; }
+    }
+  }
+
+/**
+* LOGIN STYLES
+*/
+$login-title-c: #707070;
+$login-border-c: #707070;
+$login-font-c: #707070;
+$login-bgc: $color2;
+
+/**
+* LAYOUT STYLES
+*/
+
+$layout-bgc: #ffffff;
+
+/**
+* HEADER STYLES
+*/
+
+$header-bgc: $color1;
+
+/**
+* Menu STYLES
+*/
+$menu-title-c: #707070;
+$menu-link-c: $color4;
+$menu-active-route-link-c: $color1;
+$menu-bgc: $color2;
+$menu-bottom-border-c: $color1;
+
+/**
+* TABLE STYLES
+*/
+
+$table-header-bgc: #FFFFFF;
+$table-header-c: #000000;
+
+$table-wrapper-border-c: #000000;
+$table-body-border-c: #D8D8D8;
+$table-header-border-c: #D8D8D8;
+
+$table-header-height: 42px;
+
+/**
+* BUTTON STYLES
+*/
+
+$button-border-c: #707070;
+$button-font-c: #707070;
+
+$btn-fc1: #ffffff;
+$btn-fc2: $btn-fc1;
+$btn-fc3: $color1;
+
+$btn-color1: $color1;
+
+$btn-bg1: #ffffff;
+$btn-bg__disabled: #ededed;
+
+/**
+* TITLE STYLES
+**/
+
+$title-c1: $color2;
+$title-c2: $color1;

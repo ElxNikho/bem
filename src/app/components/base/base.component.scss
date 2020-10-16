@@ -1,0 +1,126 @@
+@import "~src/assets/scss/variables.scss";
+
+.mat-drawer-content.mat-sidenav-content {
+  background-color: $layout-bgc;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 265px;
+  background-color: $menu-bgc;
+  border-bottom: 7px solid $menu-bottom-border-c;
+    background-position: 0 0;    
+    background-repeat: no-repeat;
+
+  .mat-nav-list {
+    width: 90%;
+    margin: 25px auto 0;
+  }
+  
+  .mat-toolbar {
+    background: inherit;
+    margin: 45px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+      width: 60%;
+    }
+    
+  }
+  .menu__link {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $menu-link-c;
+    &.menu__link--active {
+      color: $menu-active-route-link-c;
+      position: relative;
+    }
+
+    .link--underlined {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      border-bottom: 1.5px solid $color1;
+    }
+  }
+  .menu__link--logout {
+    bottom: 0;
+    color: $menu-link-c;
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    justify-content: center;
+    left: 50%;
+    margin-bottom: 8px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 80%;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 40px;
+  background-color: $header-bgc;
+  
+  .button__lang {
+    margin-left: auto;
+  }
+}
+
+.menu-title {
+  margin: auto;
+  color: $menu-title-c;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1.5em 0.8em;
+  position: relative;
+  &::before {
+    content: "";
+    width: 85%;
+    height: 0.5px;
+    position: absolute;
+    background: white;
+    top: 1px;
+  }
+  &::after {
+    content: "";
+    width: 85%;
+    height: 0.5px;
+    position: absolute;
+    background: white;
+    bottom: 0;
+  }
+  img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1.5px solid $color4;
+    + label {
+      color: $color4;
+      font-size: 1rem;
+      margin-left: 1em;
+      margin-bottom: 0;
+    }
+  }
+}

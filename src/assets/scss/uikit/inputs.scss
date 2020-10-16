@@ -1,0 +1,60 @@
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: $color5;
+}
+
+.mat-form-field-appearance-outline:not(.mat-form-field-disabled)
+  .mat-form-field-flex:hover
+  .mat-form-field-outline-thick {
+  color: $color5;
+}
+.mat-form-field.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label,
+.mat-form-field.mat-focused .mat-form-field-label {
+  color: $color5 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-gap,
+.mat-form-field-appearance-outline .mat-form-field-outline-start,
+.mat-form-field-appearance-outline .mat-form-field-outline-end {
+  border-width: 2px !important;
+  background-color: white;
+}
+
+.mat-form-field-appearance-outline.noborder .mat-form-field-outline-gap,
+.mat-form-field-appearance-outline.noborder .mat-form-field-outline-start,
+.mat-form-field-appearance-outline.noborder .mat-form-field-outline-end {
+  border-width: 0px !important;
+  background-color: white;
+}
+.mat-select-arrow {
+  color: $color1;
+}
+
+/**
+* DATE PICKER
+**/
+
+.mat-datepicker-toggle,
+.mat-datepicker-content .mat-calendar-next-button,
+.mat-datepicker-content .mat-calendar-previous-button {
+  color: $color1;
+}
+
+.mat-calendar-arrow {
+  border-top-color: $color1;
+}
+
+/* SELECT OPTION WHEN IS SELECTED COLOR */
+
+.mat-select-panel .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: $color1;
+}
+.mat-primary .mat-pseudo-checkbox-checked,
+.mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: $color1;
+}
+.mat-option .mat-pseudo-checkbox, .mat-pseudo-checkbox {
+  border-color: $color1;
+}
