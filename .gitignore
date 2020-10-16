@@ -100,5 +100,3 @@ testem.log
 .DS_Store
 Thumbs.db
 /package-lock.json
->>>>>>> feature-EVERPROD-4_Login
->>>>>>> bfc48f3ad40b65914bcde7378bec95d18ea5ab3e
